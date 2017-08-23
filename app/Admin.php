@@ -6,6 +6,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class Admin extends Authenticatable
 {
+    protected $table="user";
+    protected $primaryKey="userid";
     protected $guard = "admin";
     
     /**
