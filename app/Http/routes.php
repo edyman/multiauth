@@ -36,3 +36,7 @@ Route::group(['prefix' => config('admin.url')], function() {
 	});
 });
 
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
